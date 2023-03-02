@@ -11,7 +11,6 @@ if n == len(numbers):
 else:
     print("입력한 숫자의 개수가 설정값과 다릅니다.")
 
-# a
 
 
 
