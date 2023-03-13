@@ -4,7 +4,7 @@ array_n, ask_n = map(int,input().split())
 
 matrix_a = []
 
-배열 입력 받기
+#배열 입력 받기
 for i in range(array_n):
     matrix_row = list(map(int, input().split()))
     matrix_a.append(matrix_row)
@@ -12,7 +12,7 @@ for i in range(array_n):
 answer_a = []
 
 
-질의 범위 입력 받고 계산 하기
+#질의 범위 입력 받고 계산 하기
 for i in range(ask_n):
     x1, y1, x2, y2 = map(int, input().split())
     sum = 0
@@ -26,7 +26,7 @@ for i in range(ask_n):
 for i in answer_a:
     print(i)
 
-# 정답
+# 책에 나와있는 정답
 import sys
 input = sys.stdin.readline
 n,m = map(int, input().split())
@@ -47,5 +47,3 @@ for _ in range(m):
     #구간 합 배열로 질의에 답변
     result = D[x2][y2] - D[x1-1][y2] - D[x2][y1-1] + D[x1-1][y1-1]
     print(result)
-
-hi = 'hi'
